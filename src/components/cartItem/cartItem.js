@@ -37,7 +37,7 @@ const CartItem = ({ closeModal }) => {
                                 </div>
                                 <div className='singleCartItem__info'>
                                     <div className='cart__desc'>
-                                        <span>{ cartItem.title }</span>
+                                        <span className='itemDesc'>{ cartItem.title }</span>
                                         <span className="cartSubTotal">Price: &#8358;{ cartItem.quantity * cartItem.price }</span>
                                     </div>
                                     <div className="cartProductAction">
@@ -71,7 +71,7 @@ const CartItem = ({ closeModal }) => {
                         )
                     })
                 }
-                { totalPrice > 0 ? <div>Total cart item: &#8358;{ totalPrice.toFixed(2) }</div> : null }
+                { totalPrice > 0 ? <div className='grandtotal'><p className='grandtotal__text'>Total cart item: &#8358;{ totalPrice.toFixed(2) }</p></div> : null }
             </div>
         </div>
     );
