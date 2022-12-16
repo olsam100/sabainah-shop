@@ -1,0 +1,213 @@
+.main {
+    margin: 0 13rem;
+    padding: 0 1.5rem;
+}
+
+.mainContainer__one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.listing__filter {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter__section1 {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    margin: 0.5rem;
+}
+
+.listing__filter__search {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+.search__icon, .chevron__down {
+    stroke: #000000;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.search__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.chevron__down {
+    width: 1.4rem;
+    height: auto;
+}
+
+.listing__input {
+    min-width: 20rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    color: #4f4f4f;
+    border: none;
+    border-radius: 0;
+    transition: all 300ms ease;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    display: block;
+    outline: none;
+    overflow: visible;
+}
+
+.listing__filter__category {
+    position: relative;
+}
+
+.listing__filter__category__btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    color: #828282;
+    cursor: pointer;
+    line-height: 2rem;
+    min-width: 20rem;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.listing__filter__category__btn__label {
+    font-family: sans-serif;
+}
+
+.listing__filter__category__dropdown {
+    /* display: none; */
+    background-color: #ffffff;
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin-top: 0.5rem;
+    max-height: 50rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0.5rem 0;
+    position: absolute;
+    width: 20rem;
+    z-index: 2;
+}
+
+.listing__filter__category__dropdown__item {
+    color: #333333;
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: block;
+    line-height: 1.7rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.listing__filter__category__dropdown__item:hover {
+    background-color: #F4F6F8;
+}
+
+.allitemswrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0 -1.5rem;
+    padding: 0 0 8rem;
+}
+
+.singleItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1.5rem;
+    width: 26.5rem;
+}
+
+.singleItem__image__Container {
+    position: relative;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    width: 26.5rem;
+    height: 25rem;
+    cursor: pointer;
+}
+
+.single__Img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    transition: transform 300ms ease;
+}
+
+.item__body {
+    padding-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+}
+
+.item__title {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 300ms ease;
+    word-break: break-word;
+}
+
+.item__info {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item__price__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 0 1 auto;
+    flex-direction: column;
+}
+
+.item__price {
+    color: #4f4f4f;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.addbtn {
+    width: 10rem;
+    height: 4rem;
+    background-color: rgb(0, 105, 255);
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
